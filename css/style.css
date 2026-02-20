@@ -99,6 +99,23 @@ body {
   padding-bottom: 30px;
 }
 
+
+.slider {
+  padding: 120px 0;
+  background-color: #1e1e1e;
+  color: gray;
+}
+
+.slider__top-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.slider__top-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .slider {
   padding: 200px 0;
   background-color: #1e1e1e;
@@ -169,5 +186,88 @@ body {
   opacity: 1;
   width: 10px;
   height: 10px;
-  transform: translateY(-2px);
 }
+
+.contacts {
+  padding: 120px 0;
+  background-color: #1E1E1E;
+}
+
+.contacts__inner {
+  background-color: #D8D9D8;
+  width: 613px;
+  height: 617px;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  padding: 60px 0 14px;
+  text-align: center;
+}
+
+.contacts__text {
+  padding-bottom: 35px;
+  text-align: center;
+  
+  width: 591px;
+}
+
+.form{
+  width: 327px;
+  margin: 0 auto;
+}
+
+ .form__input {
+  color: #1E1E1E;
+  margin-bottom: 18px;
+  border-radius: 35px;
+  border: 1px solid gray;
+  display: block;
+  width: 100%;
+  height: 66px;
+  padding: 21px 15px 21px 51px;
+  position: relative;
+}
+
+.form__input::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+/* .form-name::before{
+  background-image: url(../images/name.svg);
+}
+
+.form-phone::before{
+  background-image: url(../images/phone.svg);
+}
+
+.form-email::before{
+  background-image: url(../images/email.svg);
+} */
+
+.form__button {
+  background-color: #7867F4;
+  color: #fff;
+  border: transparent;
+  border-radius: 35px;
+  width: 100%;
+  height: 66px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+span{
+  color: #7E868E;
+}
+
+span a {
+  color: #7E868E;
+  text-decoration: underline;
+} 
