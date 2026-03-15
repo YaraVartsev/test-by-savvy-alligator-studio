@@ -1,19 +1,55 @@
-// $(function() {
 
-//   $('.slider__inner').slick({
-//     dots: true,
-//     arrows: false,
-//   });
+// const swiper = new Swiper('.projects__slider', {
+//   slidesPerView: 1,
+//   spaceBetween: 20,
+//   loop: true,
 
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//     },
+//   },
 
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
 // });
 
-
- let myImageSwiper = new Swiper(".mySwiper", {
+let myImageSwiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 1,
+        },
       },
 
       autoHeight: true,
@@ -80,5 +116,17 @@
         item.classList.toggle('card--inactive')
         item.parentNode.querySelector('.card__short').classList.toggle('card--inactive')
       })
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const form = document.getElementById('form');
+      form.addEventListener('submit', formSend);
+
+      async function formSend(e) {
+        e.preventDefault();
+
+        let error = formValidate(form)
+      }
     });
 
